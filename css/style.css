@@ -282,7 +282,7 @@ nav .nav_btn:hover {
      justify-content: space-between;
      padding: 10px;
      height: 80px;
-     width: 500px;
+     width: 600px;
 }
 
 .discover .filter_btns p {
@@ -314,6 +314,15 @@ nav .nav_btn:hover {
 
      .discover .filter_btns {
           width: 100%;
+     }
+}
+
+@media (max-width:650px) {
+     .discover .filter_btns {
+          flex-wrap: wrap;
+          justify-content: start;
+          gap: 10px;
+          height: auto;
      }
 }
 
