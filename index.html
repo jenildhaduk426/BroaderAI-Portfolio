@@ -119,6 +119,7 @@
                     <p id="web">Web Design</p>
                     <p id="logo">Logo Design</p>
                     <p id="post">Festival Post</p>
+                    <p id="product">Product</p>
                </div>
           </div>
      </div>
@@ -155,9 +156,9 @@
                     target="_blank">
                     <img src="img/nirpoori.png" alt="box">
                </a>
-               <a href="https://www.figma.com/design/kVsQWHZfQArWLFussKiODB/Anu-Jewel?node-id=1923-1085&node-type=frame&t=jLiQRcGsnOAONiSs-0"
+               <a href="https://www.figma.com/design/z79UvcJXvfHo7fPvorQpQz/ARHAM-Finance?t=vfSYcCPgUVkeMmNN-0"
                     target="_blank">
-                    <img src="img/anu.png" alt="box">
+                    <img src="img/arham.png" alt="box">
                </a>
           </div>
 
@@ -177,14 +178,14 @@
                          <img src="img/logo1_1.png" alt="box">
                          <!-- <h3>1</h3> -->
                     </a>
-                    <a href="img/logo2_2.jpg" data-fancybox="group" data-caption="Doin'Denimz Logo Design">
+                    <a href="img/logo2_2.png" data-fancybox="group" data-caption="Doin'Denimz Logo Design">
                          <img src="img/logo2.png" alt="box">
                          <!-- <h3>2</h3> -->
                     </a>
-                    <a href="img/logo3.png" data-fancybox="group" data-caption="Bio Lubricant Logo Design">
+                    <a href="img/logo3_2.png" data-fancybox="group" data-caption="Bio Lubricant Logo Design">
                          <img src="img/logo3.png" alt="box">
                     </a>
-                    <a href="img/logo4.png" data-fancybox="group" data-caption="Anu Jewel Logo Design">
+                    <a href="img/logo4_2.png" data-fancybox="group" data-caption="Anu Jewel Logo Design">
                          <img src="img/logo4.png" alt="box">
                     </a>
                     <a href="img/logo5.png" data-fancybox="group" data-caption="Antilia Logo Design">
@@ -202,7 +203,7 @@
                     <a href="img/logo9.png" data-fancybox="group" data-caption="Samurai Production Logo Design">
                          <img src="img/logo9_2.png" alt="box">
                     </a>
-                    <a href="img/logo10.png" alt="box" data-fancybox="group" data-caption="Smart Cardify Logo Design">
+                    <a href="img/logo10_2.png" alt="box" data-fancybox="group" data-caption="Smart Cardify Logo Design">
                          <img src="img/logo10.png">
                     </a>
                </div>
@@ -248,6 +249,11 @@
                     <a href="img/post12.png" data-fancybox="group" data-caption="Maha Shivratri">
                          <img src="img/post12.png" alt="box">
                     </a>
+               </div>
+          </div>
+
+          <div class="product" id="product_page">
+               <div class="box imglist" id="product_page">
                     <a href="img/post13.png" data-fancybox="group" data-caption="Rajbhog Icecream">
                          <img src="img/post13.png" alt="box">
                     </a>
@@ -310,6 +316,7 @@
                document.getElementById('web_page').style.display = 'none';
                document.getElementById('logo_page').style.display = 'none';
                document.getElementById('post_page').style.display = 'none';
+               document.getElementById('product_page').style.display = 'none'; // Hide product section
 
                // Set UI button as active by default
                document.getElementById('ui').classList.add('active');
@@ -335,22 +342,27 @@
 
                // Event listeners for the buttons
                document.getElementById('ui').addEventListener('click', function () {
-                    switchPage('ui_page', ['web_page', 'logo_page', 'post_page'], 'ui');
+                    switchPage('ui_page', ['web_page', 'logo_page', 'post_page', 'product_page'], 'ui');
                });
 
                document.getElementById('web').addEventListener('click', function () {
-                    switchPage('web_page', ['ui_page', 'logo_page', 'post_page'], 'web');
+                    switchPage('web_page', ['ui_page', 'logo_page', 'post_page', 'product_page'], 'web');
                });
 
                document.getElementById('logo').addEventListener('click', function () {
-                    switchPage('logo_page', ['ui_page', 'web_page', 'post_page'], 'logo');
+                    switchPage('logo_page', ['ui_page', 'web_page', 'post_page', 'product_page'], 'logo');
                });
 
                document.getElementById('post').addEventListener('click', function () {
-                    switchPage('post_page', ['ui_page', 'web_page', 'logo_page'], 'post');
+                    switchPage('post_page', ['ui_page', 'web_page', 'logo_page', 'product_page'], 'post');
+               });
+
+               document.getElementById('product').addEventListener('click', function () {
+                    switchPage('product_page', ['ui_page', 'web_page', 'logo_page', 'post_page'], 'product');
                });
           });
      </script>
+
 
 
 
